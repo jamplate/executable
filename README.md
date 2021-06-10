@@ -42,4 +42,4 @@ The following is a list of the options that can be passed to the executable:
 
 <br>
 
-- `<Key>:<Value>` this option associates `<Value>` to `<Key>` in the default memory.
+- `<Key>=<Value>` this option associates `<Value>` to `<Key>` in the default memory.
