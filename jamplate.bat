@@ -1,2 +1,2 @@
 @echo OFF
-java -jar jamplate.jar %*
+java -jar %~dp0jamplate.jar %*
