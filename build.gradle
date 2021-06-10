@@ -1,0 +1,29 @@
+plugins {
+	id 'java'
+	id "com.github.johnrengelman.shadow" version "5.2.0"
+}
+
+group 'org.jamplate'
+version '0.2.3'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+	implementation 'org.jamplate:processor:0.2.3'
+
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
+	implementation 'org.jetbrains:annotations:20.1.0'
+}
+
+test {
+	useJUnitPlatform()
+}
+
+jar {
+	manifest {
+		attributes "Main-Class": "org.jamplate.executable.JamplateMain"
+	}
+}
